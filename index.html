@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Currency Converter</title>
+        <!-- <link rel="stylesheet" href="reset.css"> -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        
+    </head>
+    <body>
+        <div class="container">
+
+            <header>
+                <h1 class="conversor__title">Currency converter</h1>
+            </header>
+            
+            <main>
+                <label> Dólar (USD) hoje:
+                    <input type="text" class="input__value" id="inputValue" placeholder="Digite o valor">
+                </label>
+
+                <label> Converter de
+                    <select class="conversor__select" id="fromCurrency">
+                        <option value="USD">Estados Unidos, Dólar (USD)</option>
+                        <option value="BRL">Brasil, Real (BRL)</option>
+                    </select>
+                </label>
+            
+                <label>Converter para
+                    <select class="conversor__select" id="toCurrency">
+                        <option value="BRL">Brasil, Real (BRL)</option>
+                        <option value="USD">Estados Unidos, Dólar (USD)</option>
+                    </select>
+                </label>
+
+                <input type="text" class="input__value" id="inputValue" placeholder="Digite o valor">
+
+                <button id="conversor__button" type="button">Converter</button>
+            
+                <h2 class="conversor__result" id="result">0,00</h2>
+            </main>  
+        </div>      
+        
+        <script src="principal.js"></script>
+    </body>
+</html>
