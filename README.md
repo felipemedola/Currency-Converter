@@ -26,6 +26,12 @@ O projeto utiliza uma taxa de câmbio fixa definida diretamente no código JavaS
 
 O usuário insere o valor, escolhe as moedas de origem e destino e clica em "Converter". A aplicação calcula o valor convertido com base na taxa de câmbio e exibe o resultado.
 
+## Acesse o Projeto
+
+O projeto pode ser acessado ao vivo através do link abaixo:
+
+[https://felipemedola.github.io/personal_Currency_Converter/](https://felipemedola.github.io/personal_Currency_Converter/)
+
 ## Estrutura de Pastas
 
 ```plaintext
@@ -38,3 +44,9 @@ personal_Currency_Converter/
 │   └── icon/             # Ícone aba navegador
 └── js/
     └── principal.js      # Lógica de conversão de moedas
+
+## Acesse o Projeto
+
+O projeto pode ser acessado ao vivo através do link abaixo:
+
+[https://www.seuprojeto.com](https://www.seuprojeto.com)
