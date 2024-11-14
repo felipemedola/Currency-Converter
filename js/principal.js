@@ -1,8 +1,8 @@
-const inputValue = document.getElementById('inputValue');
-const fromCurrency = document.getElementById('fromCurrency');
-const toCurrency = document.getElementById('toCurrency');
-const conversorButton = document.getElementById('conversorButton');
-const resultConverted =  document.getElementById('result');
+const amountInput = document.getElementById('amountInput');
+const currencyFrom = document.getElementById('currencyFrom');
+const currencyTo = document.getElementById('currencyTo');
+const convertButton = document.getElementById('convertButton');
+const conversionResult = document.getElementById('conversionResult');
 
 const exchangeRates = {
     'BRL-USD': 1 / 5.75,
@@ -10,24 +10,24 @@ const exchangeRates = {
 }
 
 function convertCurrency() {
-    const amount = parseFloat(inputValue.value);
+    const amount = parseFloat(amountInput.value);
 
     if (isNaN(amount) || amount <= 0) {
-        resultConverted.textContent = 'Por favor, insira um valor válido.';
+        conversionResult.textContent = 'Por favor, insira um valor válido.';
         return;
     }
 
-    const from = fromCurrency.value;
-    const to = toCurrency.value;
+    const from = currencyFrom.value;
+    const to = currencyTo.value;
 
     const exchangeKey = `${from}-${to}`;
 
     if (exchangeRates[exchangeKey]) {
         const convertedAmount = amount * exchangeRates[exchangeKey];
-        resultConverted.textContent = convertedAmount.toFixed(2) +  to;
+        conversionResult.textContent = `${to === 'USD' ? '$' : 'R$'} ${convertedAmount.toFixed(2)}`;
     } else {
-        resultConverted.textContent = 'Selecione moedas diferentes para converter.'
+        conversionResult.textContent = 'Selecione moedas diferentes para converter.';
     }
 }
 
-conversorButton.addEventListener('click', convertCurrency);
+convertButton.addEventListener('click', convertCurrency);

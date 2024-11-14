@@ -1,52 +1,51 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Currency Converter</title>
-        <link rel="stylesheet" href="../personal_Currency_Converter/css/reset.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../personal_Currency_Converter/css/styles.css">
-        <link rel="icon" href="../personal_Currency_Converter/img/icon/money-icon.png" type="image/x-icon">
-    </head>
-    <body>
-        <div class="container">
-
-            <header>
-                <h1 class="conversor__title">Currency Converter</h1>
-            </header>
-            
-            <main>
-                <div class="classCenter">
-                    <input type="text" class="input__value" id="inputValue" placeholder="Digite o valor">
-                </div>
-
-                <label id="labelConvert"> Converter de
-                    <select class="conversor__select" id="fromCurrency">
-                        <option value="USD">Estados Unidos, Dólar (USD)</option>
-                        <option value="BRL">Brasil, Real (BRL)</option>
-                    </select>
-                </label>
-            
-                <label id="labelConvert">Converter para
-                    <select class="conversor__select" id="toCurrency">
-                        <option value="BRL">Brasil, Real (BRL)</option>
-                        <option value="USD">Estados Unidos, Dólar (USD)</option>
-                    </select>
-                </label>
-
-                <div class="classCenter">
-                    <button id="conversorButton" type="button">Converter</button>
-                </div>
-                
-                <div class="classCenter">
-                    <h2 class="conversor__result" id="result">0,00</h2>
-                </div>
-            </main>  
-        </div>      
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="../personal_Currency_Converter/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../personal_Currency_Converter/css/styles.css">
+    <link rel="icon" href="../personal_Currency_Converter/img/icon/money-icon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="converter-container">
+        <header>
+            <h1 class="converter-title">Currency Converter</h1>
+        </header>
         
-        <script src="../personal_Currency_Converter/js/principal.js"></script>
-    </body>
+        <main class="converter-main">
+            <div class="input-group">
+                <input type="text" class="converter-input" id="amountInput" placeholder="Digite o valor">
+            </div>
+
+            <label class="currency-label">Converter de
+                <select class="currency-select" id="currencyFrom">
+                    <option value="USD">Estados Unidos, Dólar (USD)</option>
+                    <option value="BRL">Brasil, Real (BRL)</option>
+                </select>
+            </label>
+        
+            <label class="currency-label">Converter para
+                <select class="currency-select" id="currencyTo">
+                    <option value="BRL">Brasil, Real (BRL)</option>
+                    <option value="USD">Estados Unidos, Dólar (USD)</option>
+                </select>
+            </label>
+
+            <div class="button-group">
+                <button class="convert-button" id="convertButton" type="button">Converter</button>
+            </div>
+            
+            <div class="result-group">
+                <h2 class="conversion-result" id="conversionResult">0,00</h2>
+            </div>
+        </main>  
+    </div>      
+
+    <script src="../personal_Currency_Converter/js/principal.js"></script>
+</body>
 </html>

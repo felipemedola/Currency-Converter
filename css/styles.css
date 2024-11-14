@@ -1,9 +1,7 @@
 body {
-    font-family: "Roboto", serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 300;
-    font-style: normal;
     font-size: 16px;
-    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,32 +9,31 @@ body {
     height: 100vh;
 }
 
-.container {
+.converter-container {
     width: 25%;
     padding: 20px;
     background-color: #E0E6ED;
     border-radius: 2em;
 }
 
-.conversor__title {
+.converter-title {
     text-align: center;
     color: #333333;
     font-size: 2em;
     font-weight: bold;
 }
 
-main {
-    display: block;
+.converter-main {
     padding: 24px;
 }
 
-#labelConvert,
-.conversor__select,
-#result {
+.currency-label,
+.currency-select,
+.conversion-result {
     display: block;
 }
 
-#inputValue {
+.converter-input {
     color: #333; 
     padding: 0.6em 1em;
     width: 50%;
@@ -44,25 +41,27 @@ main {
     border: 2px solid #ccc;
     border-radius: 1em;
     margin-bottom: 1em;
-    justify-content: center;
+    text-align: center;
 }
 
-#labelConvert {
+.currency-label {
     margin-bottom: 1em;
     width: 100%;
 }
 
-.conversor__select {
+.currency-select {
     border-radius: 0.5em;
     padding: 0.3em;
 }
 
-.classCenter {
+.input-group,
+.button-group,
+.result-group {
     display: flex;
     justify-content: center;
 }
 
-#conversorButton {
+.convert-button {
     font-weight: 500;
     color: #FFF;
     background-color: #007BFF;
@@ -70,14 +69,16 @@ main {
     padding: 0.6em 1em;
     margin: 1em 0;
     width: 50%;
+    text-align: center;
+    cursor: pointer;
 }
 
-#conversorButton:hover {
+.convert-button:hover {
     color: #000;
     background-color: #FFF;
     transition: 1.5s;
 }
 
-.conversor__result {
+.conversion-result {
     font-size: 1.2em;
 }
