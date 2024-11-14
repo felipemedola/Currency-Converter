@@ -8,7 +8,7 @@ O **Currency Converter** permite converter valores entre as moedas **Real** e **
 
 ### Funcionalidades
 - **Conversão entre BRL e USD:** Realiza a conversão com base em taxas fixas configuradas no projeto.
-- **Atualização Automática de Símbolos:** Exibe os símbolos de cada moeda ($ para USD e R$ para BRL) no campo de entrada e no resultado, de acordo com a seleção do usuário.
+- **Atualização Automática de Símbolos:** Exibe os símbolos de cada moeda ($ para USD e R$ para BRL) no campo de resultado, de acordo com a seleção do usuário.
 - **Interface Responsiva:** Adaptável para diferentes dispositivos, utilizando conceitos básicos de responsividade.
 
 ## Tecnologias Utilizadas
