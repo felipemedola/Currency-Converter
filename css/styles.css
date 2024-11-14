@@ -31,6 +31,7 @@ main {
 }
 
 #labelConvert,
+.conversor__select,
 #result {
     display: block;
 }
@@ -47,7 +48,7 @@ main {
 }
 
 #labelConvert {
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
     width: 100%;
 }
 
