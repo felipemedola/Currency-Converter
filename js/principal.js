@@ -8,14 +8,14 @@ const conversionResult = document.getElementById('conversionResult');
 const conversionImg = document.getElementById('conversionImg');
 
 const currencyFlags = {
-    USD: "img/logo-usa.png", // Caminho para a bandeira dos EUA
-    BRL: "img/logo-brasil.png" // Caminho para a bandeira do Brasil
+    USD: "img/logo-usa.png",
+    BRL: "img/logo-brasil.png"
 };
 
 function updateCurrencyImage() {
-    const selectedCurrency = currencyTo.value; // Altere para currencyFrom se desejar basear nisso
-    const newImgSrc = currencyFlags[selectedCurrency]; // Obtém a bandeira correspondente
-    conversionImg.src = newImgSrc; // Atualiza o atributo 'src' da imagem
+    const selectedCurrency = currencyTo.value;
+    const newImgSrc = currencyFlags[selectedCurrency]; 
+    conversionImg.src = newImgSrc;
 }
 
 async function convertCurrency() {
