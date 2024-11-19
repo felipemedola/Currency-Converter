@@ -14,6 +14,7 @@ body {
     padding: 20px;
     background-color: #E0E6ED;
     border-radius: 2em;
+    box-shadow: 4px 2px 2px #595d61;
 }
 
 .converter-title {
