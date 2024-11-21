@@ -19,7 +19,8 @@
         
         <main class="converter-main">
             <div class="input-group">
-                <input type="text" class="converter-input" id="amountInput" placeholder="Digite o valor">
+                <p class="conversion-text">Valor: </p>
+                <input type="number" class="converter-input" id="amountInput" >
             </div>
 
             <label class="currency-label">Converter de
@@ -39,13 +40,21 @@
             <div class="button-group">
                 <button class="convert-button" id="convertButton" type="button">Converter</button>
             </div>
+
             
-            <div class="result-group">
+            <section class="result-group">
+                <p class="conversion-text">Resultado da Conversão:</p>
                 <h2 class="conversion-result" id="conversionResult">0,00</h2>
-            </div>
+
+                <div class="result-image">
+                    <img src="img/logo-brasil.png" alt="Logo bandeira referente a cédula escolhida" class="conversion-img" id="conversionImg">
+                </div>
+            </section>
+
+
         </main>  
     </div>      
 
-    <script src="js/principal.js"></script>
+    <script type="module" src="js/principal.js"></script>
 </body>
 </html>
