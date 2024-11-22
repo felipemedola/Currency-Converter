@@ -20,20 +20,23 @@
         <main class="converter-main">
             <div class="input-group">
                 <p class="conversion-text">Valor: </p>
-                <input type="number" class="converter-input" id="amountInput" >
+                <input type="number" class="converter-input" id="amountInput">
             </div>
 
             <label class="currency-label">Converter de
                 <select class="currency-select" id="currencyFrom">
-                    <option value="USD">Estados Unidos, Dólar (USD)</option>
-                    <option value="BRL">Brasil, Real (BRL)</option>
+                    <option value="BRL">Real (BRL)</option>
+                    <option value="EUR">Euro (EUR)</option>
+                    <option value="USD">Dólar (USD)</option>
+                    <option value="BTC">Bitcoin (BTC)</option>
                 </select>
             </label>
         
             <label class="currency-label">Converter para
                 <select class="currency-select" id="currencyTo">
-                    <option value="BRL">Brasil, Real (BRL)</option>
-                    <option value="USD">Estados Unidos, Dólar (USD)</option>
+                    <option value="USD">Dólar (USD)</option>
+                    <option value="BRL">Real (BRL)</option>
+                    <option value="EUR">Euro (EUR)</option>
                 </select>
             </label>
 
@@ -47,7 +50,7 @@
                 <h2 class="conversion-result" id="conversionResult">0,00</h2>
 
                 <div class="result-image">
-                    <img src="img/logo-brasil.png" alt="Logo bandeira referente a cédula escolhida" class="conversion-img" id="conversionImg">
+                    <img src="img/logo-dolar.png" alt="Logo bandeira referente a cédula escolhida" class="conversion-img" id="conversionImg">
                 </div>
             </section>
 

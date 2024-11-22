@@ -8,8 +8,9 @@ const conversionResult = document.getElementById('conversionResult');
 const conversionImg = document.getElementById('conversionImg');
 
 const currencyFlags = {
-    USD: "img/logo-usa.png",
-    BRL: "img/logo-brasil.png"
+    BRL: "img/logo-real.png",
+    USD: "img/logo-dolar.png",
+    EUR: "img/logo-euro.png"
 };
 
 function updateCurrencyImage() {
@@ -39,8 +40,16 @@ async function convertCurrency() {
 
     if (exchangeRate) {
         const convertedAmount = amount * exchangeRate;
-        conversionResult.textContent = `${to === 'USD' ? '$' : 'R$'} ${convertedAmount.toFixed(2)}`;
 
+        if (to === 'USD') {
+            conversionResult.textContent = 'US$ ' + `${convertedAmount.toFixed(2)}`
+        } else if (to === 'BRL') {
+            conversionResult.textContent = 'R$ ' + `${convertedAmount.toFixed(2)}`
+        } else if (to === 'EUR') {
+            conversionResult.textContent = '€ ' + `${convertedAmount.toFixed(2)}`
+        } else if (to === 'BTC') {
+            conversionResult.textContent = '₿ ' + `${convertedAmount.toFixed(2)}`
+        }
     } else {
         conversionResult.textContent = 'Erro ao obter a cotação. Tente novamente mais tarde.';
     }
