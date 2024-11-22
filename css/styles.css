@@ -106,3 +106,13 @@ body {
     background-color: #FFF;
     transition: 1.5s;
 }
+
+@media (pointer: coarse) {
+    .converter-container {
+        width: 70%;
+    }
+
+    .conversion-text {
+        margin-right: 0.2em;
+    }
+}
