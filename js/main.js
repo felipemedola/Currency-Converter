@@ -46,5 +46,5 @@ async function convertCurrency() {
     }
 }
 
-currencyTo.addEventListener("change", updateCurrencyImage);
+currencyTo.addEventListener('change', updateCurrencyImage);
 convertButton.addEventListener('click', convertCurrency);
