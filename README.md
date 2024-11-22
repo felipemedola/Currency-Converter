@@ -1,52 +1,59 @@
-# Currency Converter
+### Currency Converter
+ 
+Este é um projeto interativo de conversão de moedas que permite transformar valores entre diversas moedas, incluindo Real (BRL), Dólar (USD), Euro (EUR), e Bitcoin (BTC). Utilizando **HTML**, **CSS**, e **JavaScript**, o projeto oferece uma interface intuitiva e responsiva para facilitar o uso.
 
-Este é um projeto simples de **Conversor de Moedas** entre **Real (BRL)** e **Dólar (USD)**. O projeto utiliza **HTML**, **CSS** e **JavaScript** para criar uma interface intuitiva e fácil de usar, onde o usuário pode inserir um valor em uma das moedas e converter para a outra.
+---
 
-## Descrição do Projeto
+### **Descrição do Projeto:**  
+O **Currency Converter** utiliza dados de taxas de câmbio atualizadas por meio de uma API para realizar conversões precisas entre as moedas selecionadas. A aplicação inclui recursos visuais, como troca automática de bandeiras ou ícones baseados nas moedas selecionadas.
 
-O **Currency Converter** permite converter valores entre as moedas **Real** e **Dólar** de maneira prática e direta. A interface do usuário é composta por um campo para inserir o valor, seletores para escolher a moeda de origem e destino, e um botão para realizar a conversão. 
+---
 
-### Funcionalidades
-- **Conversão entre BRL e USD:** Realiza a conversão com base em taxas fixas configuradas no projeto.
-- **Atualização Automática de Símbolos:** Exibe os símbolos de cada moeda ($ para USD e R$ para BRL) no campo de resultado, de acordo com a seleção do usuário.
-- **Interface Responsiva:** Adaptável para diferentes dispositivos, utilizando conceitos básicos de responsividade.
+### **Funcionalidades:**  
+- **Conversão Dinâmica:** Realiza cálculos de conversão em tempo real utilizando dados de uma API confiável.  
+- **Compatibilidade Multimoedas:** Suporta conversões entre Real (BRL), Dólar (USD), Euro (EUR), e Bitcoin (BTC).  
+- **Atualização Automática de Imagens:** Mostra bandeiras ou ícones representativos da moeda selecionada.  
+- **Interface Responsiva:** Adapta-se a diferentes tamanhos de tela, garantindo acessibilidade em dispositivos móveis e desktop.  
+- **Mensagens de Erro:** Feedback amigável para entradas inválidas ou falhas ao acessar a API.  
 
-## Tecnologias Utilizadas
+---
 
-- **HTML**: Estrutura da página.
-- **CSS**: Estilos e layout.
-- **JavaScript**: Lógica de conversão de moedas e manipulação do DOM.
+### **Tecnologias Utilizadas:**  
+- **HTML:** Estrutura base da aplicação.  
+- **CSS:** Estilo e layout responsivo.  
+- **JavaScript:** Manipulação do DOM e integração com a API de câmbio.  
 
-## Como Funciona
+---
 
-O projeto utiliza uma taxa de câmbio fixa definida diretamente no código JavaScript:
+### **Como Funciona:**  
+1. O usuário insere um valor numérico.  
+2. Seleciona as moedas de origem e destino.  
+3. A aplicação consulta a **API de câmbio** para obter as taxas de conversão.  
+4. O valor convertido é exibido em tempo real, com o símbolo e a imagem correspondentes à moeda escolhida.  
 
-- **BRL para USD:** 1 BRL = 0,17 USD
-- **USD para BRL:** 1 USD = 5,75 BRL
+---
 
-O usuário insere o valor, escolhe as moedas de origem e destino e clica em "Converter". A aplicação calcula o valor convertido com base na taxa de câmbio e exibe o resultado.
+### **Acesse o Projeto:**  
+O projeto pode ser visualizado ao vivo clicando no link abaixo:  
+[Currency Converter Live Demo](https://felipemedola.github.io/currency-converter/)
 
-## Acesse o Projeto
+---
 
-O projeto pode ser acessado ao vivo através do link abaixo:
-
-[https://felipemedola.github.io/personal_Currency_Converter/](https://felipemedola.github.io/personal_Currency_Converter/)
-
-## Estrutura de Pastas
-
+### **Estrutura de Pastas:**  
 ```plaintext
-personal_Currency_Converter/
-├── index.html            # Estrutura HTML do projeto
+currency_converter/
+├── index.html             # Estrutura HTML do projeto
 ├── css/
-│   ├── reset.css         # Estilos de reset para o CSS
-│   └── styles.css        # Estilos principais da interface
+│   ├── reset.css          # Estilos para reset de CSS
+│   └── styles.css         # Estilos principais da interface
 ├── img/
-│   └── icon/             # Ícone aba navegador
-└── js/
-    └── principal.js      # Lógica de conversão de moedas
+│   └── icon/              # Ícone aba navegador
+│   ├── logo-dolar.png     # Imagem para dólar
+│   ├── logo-euro.png      # Imagem para euro
+│   └── logo-real.png      # Imagem para real
+├── js/
+│   ├── main.js            # Lógica principal
+│   └── api.js             # Comunicação com a API de câmbio
+```
 
-## Acesse o Projeto
-
-O projeto pode ser acessado ao vivo através do link abaixo:
-
-[https://www.seuprojeto.com](https://www.seuprojeto.com)
+Caso precise de mais ajustes ou adições, é só avisar! 😊
