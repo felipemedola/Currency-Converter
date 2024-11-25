@@ -7,6 +7,12 @@ const convertButton = document.getElementById('convertButton');
 const conversionResult = document.getElementById('conversionResult');
 const conversionImg = document.getElementById('conversionImg');
 
+const currencySymbols = {
+    BRL: "R$",
+    USD: "US$",
+    EUR: "€"
+}
+
 const currencyFlags = {
     BRL: "img/logo-real.png",
     USD: "img/logo-dolar.png",
@@ -41,15 +47,8 @@ async function convertCurrency() {
     if (exchangeRate) {
         const convertedAmount = amount * exchangeRate;
 
-        if (to === 'USD') {
-            conversionResult.textContent = 'US$ ' + `${convertedAmount.toFixed(2)}`
-        } else if (to === 'BRL') {
-            conversionResult.textContent = 'R$ ' + `${convertedAmount.toFixed(2)}`
-        } else if (to === 'EUR') {
-            conversionResult.textContent = '€ ' + `${convertedAmount.toFixed(2)}`
-        } else if (to === 'BTC') {
-            conversionResult.textContent = '₿ ' + `${convertedAmount.toFixed(2)}`
-        }
+        const symbol = currencySymbols[to] || '';
+        conversionResult.textContent = `${symbol} ${convertedAmount.toFixed(2)}`
     } else {
         conversionResult.textContent = 'Erro ao obter a cotação. Tente novamente mais tarde.';
     }
