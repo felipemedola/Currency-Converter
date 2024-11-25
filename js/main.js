@@ -39,6 +39,7 @@ async function convertCurrency() {
 
     if (from === to) {
         conversionResult.textContent = 'Selecione moedas diferentes para converter.';
+        conversionResult.style.textAlign = 'center';
         return;
     }
 
