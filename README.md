@@ -39,7 +39,7 @@ Para rodar este projeto localmente, siga os seguintes passos:
 ## Como Usar
 
 1. **Digite o valor** que você deseja converter no campo "Valor".
-2. **Selecione a moeda de origem** (por exemplo, BRL, EUR, USD).
+2. **Selecione a moeda de origem** (por exemplo, BRL, EUR, USD, BTC).
 3. **Selecione a moeda de destino** (por exemplo, USD, EUR, BRL).
 4. Clique no botão **"Converter"** para ver o resultado.
 5. O resultado será exibido no símbolo de moeda correspondente (por exemplo, US$, R$, €).
